@@ -1,0 +1,6 @@
+POST http://localhost:2000/api/scores
+Content-Type: application/json
+
+{
+    "score": 100
+}
