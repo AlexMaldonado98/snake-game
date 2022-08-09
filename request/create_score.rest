@@ -1,6 +1,7 @@
 POST http://localhost:2000/api/scores
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjE2ZDg4YmRhYzVlMzlkMTZkY2M1YSIsInVzZXJuYW1lIjoiYWxleHVzZXIiLCJpYXQiOjE2NjAwMjA0MDcsImV4cCI6MTY2MDEwNjgwN30.ZIN9uPzUzfB8eTDkhI-TtPYikLOUAe85EH1X1Fy_ya4
 
 {
-    "score": 100
+    "score": 777
 }
