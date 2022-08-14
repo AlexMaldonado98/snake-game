@@ -16,7 +16,7 @@ logger.info('connecting to mongodb');
 
 mongoose.connect(MONGODB_URI)
     .then(() => logger.info('connected to mongodb'))
-    .catch(() => logger.error('[ERROR] when trying to connect to mongodb') );
+    .catch(() => logger.error('[ERROR] when trying to connect to mongodb..') );
 
 app.use(cors());
 app.use(express.json(0));
