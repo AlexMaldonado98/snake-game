@@ -23,6 +23,9 @@ app.use(express.json(0));
 app.use(morgan(':method :url :status :response-time ms :data'));
 
 app.use(middleware.tokenExtractor);
+
+app.use(express.static('build'));
+
 app.use('/api/scores',scoresRouter);
 app.use('/api/users',usersRouter);
 app.use('/api/login',loginRouter);

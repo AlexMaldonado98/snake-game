@@ -3,9 +3,10 @@ const Score = require('../models/Score');
 const middleware = require('../utils/middleware');
 
 scoresRouter.get('/', async (request, response) => {
-    const scores = await Score.find({}).populate('user',{username: 1, _id: 0});
+    const scores = await Score.find({}).populate('user',{username: 1});
     response.status(200).json(scores);
 });
+
 
 scoresRouter.post('/',middleware.userExtractor,async (request, response, next) => {
     try {
